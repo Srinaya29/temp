@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc(...scores){
+            let sum=0
+            for(let i=0; i<scores.length; i++){
+                sum+=scores[i];
+            }
+            return sum;
+            //return x+y;
+        }
+        let res2=calc(10,20,30,40,50);
+        document.write(res2); // 150
+    </script>
+</body>
+</html>

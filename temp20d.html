@@ -7,13 +7,16 @@
 </head>
 <body>
     <script>
-        let a=null;
-        console.log(typeof(a))
-        a ? console.log("True") : console.log("False"); // undefined
-        let res=a || 10;
-        console.log(res);
-        let res1=a??10
-        console.log(res1) // 10
+        //let a=null;
+        //console.log(typeof(a))
+        //a ? console.log("True") : console.log("False"); // undefined
+        //let res=a || 10;
+        //console.log(res);
+        //let res1=a??10
+        //console.log(res1) // 10
+        let cart={1:0}
+        let res=cart[1] || 10
+        console.log(res) // 0
 </script>
 </body>
 </html>
