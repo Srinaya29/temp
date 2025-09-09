@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Tables Full Demo</title>
+  <style>
+    /* General table style */
+    table {
+      width: 70%;
+      margin: 20px auto;
+      border-collapse: collapse; /* collapse double borders */
+      text-align: center;
+    }
+
+    /* Default border */
+    table, th, td {
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    /* Example background styling */
+    th, td {
+      background-color: #e0f7fa;
+    }
+
+    /* Caption styling */
+    caption {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    /* Rounded corners */
+    .rounded th, .rounded td {
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    /* Dotted border */
+    .dotted th, .dotted td {
+      border-style: dotted;
+    }
+
+    /* Different border styles */
+    .styles th, .styles td:nth-child(1) { border-style: solid; }
+    .styles th, .styles td:nth-child(2) { border-style: dashed; }
+    .styles th, .styles td:nth-child(3) { border-style: double; }
+    .styles th, .styles td:nth-child(4) { border-style: groove; }
+    .styles th, .styles td:nth-child(5) { border-style: ridge; }
+    .styles th, .styles td:nth-child(6) { border-style: inset; }
+    .styles th, .styles td:nth-child(7) { border-style: outset; }
+
+    /* Border color */
+    .color th, .color td {
+      border: 2px solid #96D4D4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Basic Table with caption, thead, tbody, tfoot -->
+  <table>
+    <caption>Student Marks Table</caption>
+    <colgroup>
+      <col style="background-color:#f2f2f2"> <!-- First column -->
+      <col> <!-- Second column normal -->
+      <col style="background-color:#d1f7c4"> <!-- Third column -->
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Srinaya</td> <!-- Rowspan -->
+        <td>Math</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Ravi</td>
+        <td colspan="2">Absent</td> <!-- Colspan -->
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Average Marks</td>
+        <td>92.5</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Table with rounded borders -->
+  <table class="rounded">
+    <caption>Rounded Borders</caption>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Pen</td>
+      <td>10</td>
+    </tr>
+  </table>
+
+  <!-- Table with dotted border -->
+  <table class="dotted">
+    <caption>Dotted Borders</caption>
+    <tr>
+      <th>Fruit</th>
+      <th>Color</th>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Mango</td>
+      <td>Yellow</td>
+    </tr>
+  </table>
+
+  <!-- Table with different border styles -->
+  <table class="styles">
+    <caption>Different Border Styles</caption>
+    <tr>
+      <th>Solid</th>
+      <th>Dashed</th>
+      <th>Double</th>
+      <th>Groove</th>
+      <th>Ridge</th>
+      <th>Inset</th>
+      <th>Outset</th>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>Example</td>
+      <td>Example</td>
+      <td>Example</td>
+      <td>Example</td>
+      <td>Example</td>
+      <td>Example</td>
+    </tr>
+  </table>
+
+  <!-- Table with border color -->
+  <table class="color">
+    <caption>Border Color Example</caption>
+    <tr>
+      <th>Language</th>
+      <th>Creator</th>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>Guido van Rossum</td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td>Bjarne Stroustrup</td>
+    </tr>
+  </table>
+
+</body>
+</html>
